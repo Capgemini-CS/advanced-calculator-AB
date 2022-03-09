@@ -25,7 +25,7 @@ public class InputValuesConsole implements InputValuesInterface {
     }
 
     @Override
-    public String getInputValueOperator() {
+    public String getInputValueOperator() throws IncorrectInputException {
         this.operator = scanner.next();
         try {
             if (!InputValidation.valueIsOneOfTheOperators(operator)) {
@@ -33,6 +33,7 @@ public class InputValuesConsole implements InputValuesInterface {
             }
         } catch (IncorrectInputException e) {
             Logger.error("Incorrect input operator.");
+            throw new IncorrectInputException("Incorrect input operator.");
         }
         return this.operator;
     }

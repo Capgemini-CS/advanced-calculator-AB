@@ -1,0 +1,17 @@
+INFO: Add 4 and 5.
+ERROR: Incorrect input
+ERROR: com.calculator.exception.IncorrectInputException: Incorrect input.
+	at com.calculator.input.InputValuesFile.getInputValueFirstNumber(InputValuesFile.java:23)
+	at com.calculator.menu.CalculatorMenu.equationResultForChosenInputMethod(CalculatorMenu.java:46)
+	at com.calculator.menu.CalculatorMenu.displayMenu(CalculatorMenu.java:21)
+	at com.calculator.Calculator.main(Calculator.java:15)
+INFO: Divide 25 to 3.
+ERROR: com.calculator.exception.DivisionByZeroException: The division is not possible because second number is equals to zero.
+	at com.calculator.input.validation.InputValidation.numberIsNotZero(InputValidation.java:23)
+	at com.calculator.operations.Division.calculate(Division.java:13)
+	at com.calculator.Calculator.executeOperation(Calculator.java:37)
+	at com.calculator.menu.CalculatorMenu.equationResultForChosenInputMethod(CalculatorMenu.java:38)
+	at com.calculator.menu.CalculatorMenu.displayMenu(CalculatorMenu.java:21)
+	at com.calculator.Calculator.main(Calculator.java:15)
+INFO: Multiply 3 by 2.
+INFO: Add 1 and 2.
